@@ -9,12 +9,13 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: $spacing-xxl;
+  padding-right: 0;
 }
 
 .imageWrapper {
   position: relative;
-  width: 45%;
-  aspect-ratio: 3000 / 2500;
+  width: 65%;
+  aspect-ratio: 1800 / 1250;
 }
 
 .description {
