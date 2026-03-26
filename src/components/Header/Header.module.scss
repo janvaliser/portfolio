@@ -17,6 +17,14 @@
   align-items: center;
 }
 
+.logoText {
+  display: flex;
+}
+
+.fullName {
+  overflow: hidden;
+}
+
 .actions {
   display: flex;
   gap: $spacing-xxl;
