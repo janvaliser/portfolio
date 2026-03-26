@@ -1,11 +1,11 @@
 import { memo } from "react";
 import classes from "./page.module.scss";
-import Typography from "@/components/Typography/Typography";
+import Grades from "@/sections/projects/Grades/Grades";
 
 const Projects = () => {
   return (
     <div className={classes.container}>
-      <Typography variant="heading-1">Projects</Typography>
+      <Grades />
     </div>
   );
 };

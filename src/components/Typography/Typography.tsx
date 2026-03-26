@@ -2,7 +2,13 @@ import { HTMLAttributes, ReactNode, Ref, memo } from "react";
 import classes from "./Typography.module.scss";
 import classNames from "classnames";
 
-type TextVariant = "heading-1" | "heading-2" | "title" | "body-1" | "body-2";
+type TextVariant =
+  | "heading-1"
+  | "heading-2"
+  | "title"
+  | "body-1"
+  | "body-1-bold"
+  | "body-2";
 
 type TypographyVariant =
   | "p"
@@ -19,7 +25,7 @@ type TypographyProps = HTMLAttributes<HTMLSpanElement> & {
   children: ReactNode;
   variant?: TextVariant;
   ref?: Ref<HTMLParagraphElement>;
-  align?: "left" | "center" | "right";
+  align?: "left" | "center" | "right" | "justify";
   color?: string;
   as?: TypographyVariant;
 };

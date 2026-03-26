@@ -1,0 +1,9 @@
+@use "@/styles/variables.scss" as *;
+
+.container {
+  width: fit-content;
+  padding: $spacing-s;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: var(--on-primary);
+}
