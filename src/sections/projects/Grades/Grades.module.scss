@@ -23,3 +23,9 @@
   flex-direction: column;
   gap: $spacing-xl;
 }
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-m;
+}

@@ -27,6 +27,7 @@ const CacheOut = () => {
           alt="CacheOut project screenshots"
           draggable={false}
           fill
+          sizes="60vw"
           priority
           style={{ objectFit: "contain" }}
         />
