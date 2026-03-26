@@ -1,0 +1,32 @@
+@use "@/styles/variables.scss" as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $spacing-xxxl;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: $spacing-xxxl;
+  padding-right: 0;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 60%;
+  aspect-ratio: 1700 / 1400;
+}
+
+.description {
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+  gap: $spacing-xl;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-m;
+}

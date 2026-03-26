@@ -3,6 +3,7 @@ import classes from "./page.module.scss";
 import Grades from "@/sections/projects/Grades/Grades";
 import CacheOut from "@/sections/projects/CacheOut/CacheOut";
 import AnitaCleaning from "@/sections/projects/AnitaCleaning/AnitaCleaning";
+import NjamGeography from "@/sections/projects/NjamGeography/NjamGeography";
 
 const Projects = () => {
   return (
@@ -10,6 +11,7 @@ const Projects = () => {
       <Grades />
       <CacheOut />
       <AnitaCleaning />
+      <NjamGeography />
     </div>
   );
 };
