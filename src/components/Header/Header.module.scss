@@ -1,7 +1,9 @@
 @use "@/styles/variables.scss" as *;
 
 .container {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  z-index: var(--header-z-index);
   display: flex;
   justify-content: center;
   width: 100%;

@@ -10,10 +10,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--background);
   color: var(--text-01);
-  /* background-image: url("../../public/images/background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 * {
@@ -60,7 +56,6 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
-
 /* Set core body defaults */
 body {
   min-height: 100%;
