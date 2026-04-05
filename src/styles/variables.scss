@@ -4,7 +4,11 @@
   --text-01: #282828;
   --text-02: #8c8c8c;
   --primary: #00a965;
+  --primary-hover: color-mix(in srgb, var(--primary) 90%, black);
+  --primary-active: color-mix(in srgb, var(--primary) 85%, black);
+  --primary-disabled: color-mix(in srgb, var(--primary) 90%, white);
   --on-primary: #ffffff;
+  --timeline-line: #e0e0e0;
 
   --grades: #347af0;
   --cacheout: #8143c7;

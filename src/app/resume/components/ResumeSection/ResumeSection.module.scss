@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.entry {
+  display: flex;
+  gap: 12px;
+}
+
+.entryText {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.titleDate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
