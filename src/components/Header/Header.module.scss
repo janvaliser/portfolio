@@ -1,17 +1,24 @@
+@use "@/styles/breakpoints.scss" as *;
+
 .container {
   position: fixed;
   top: 0;
+  left: 0;
   z-index: var(--header-z-index);
   display: flex;
   justify-content: center;
   width: 100%;
   background-color: var(--background);
+  padding: 32px 64px;
+
+  @media (max-width: $breakpoint-xs) {
+    padding: 24px;
+  }
 }
 
 .content {
   max-width: 1440px;
   width: 100%;
-  padding: 32px 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
