@@ -1,6 +1,6 @@
-import classes from "./ProjectTag.module.scss";
-import Typography from "../Typography/Typography";
 import { memo } from "react";
+import Typography from "../Typography/Typography";
+import classes from "./ProjectTag.module.scss";
 
 type ProjectTagVariant = "mobile-app" | "responsive-web-app" | "web-app";
 
@@ -23,7 +23,12 @@ const ProjectTag = ({ variant, color }: ProjectTagProps) => {
         ...(color ? { background: `var(${color})` } : {}),
       }}
     >
-      <Typography variant="body-1-bold">{labelMap[variant]}</Typography>
+      <Typography
+        className={variant === "responsive-web-app" ? classes.responsive : ""}
+        variant="body-1-bold"
+      >
+        {labelMap[variant]}
+      </Typography>
     </div>
   );
 };

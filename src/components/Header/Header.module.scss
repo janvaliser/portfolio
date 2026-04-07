@@ -1,5 +1,3 @@
-@use "@/styles/variables.scss" as *;
-
 .container {
   position: fixed;
   top: 0;
@@ -13,7 +11,7 @@
 .content {
   max-width: 1440px;
   width: 100%;
-  padding: $spacing-xxl $spacing-xxxl;
+  padding: 32px 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +27,7 @@
 
 .actions {
   display: flex;
-  gap: $spacing-xxl;
+  gap: 32px;
   align-items: center;
 }
 

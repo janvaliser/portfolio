@@ -23,7 +23,11 @@ const Grades = () => {
           <Typography variant="heading-1">Grades</Typography>
           <ProjectTag variant="mobile-app" color="--grades" />
         </div>
-        <Typography variant="body-1" align="justify">
+        <Typography
+          className={classes.details}
+          variant="body-1"
+          align="justify"
+        >
           Grades is a cross-platform Flutter app used by staff of the
           Programming Methodologies Laboratory to manage subjects, exercises,
           and student grades. I redesigned and rebuilt their internal system

@@ -23,7 +23,11 @@ const AnitaCleaning = () => {
           <Typography variant="heading-1">Cleaning Business</Typography>
           <ProjectTag variant="responsive-web-app" color="--anita-cleaning" />
         </div>
-        <Typography variant="body-1" align="justify">
+        <Typography
+          className={classes.details}
+          variant="body-1"
+          align="justify"
+        >
           Anita Potisk Cleaning is a responsive website for a cleaning service
           based in Switzerland, designed to showcase services, customer
           testimonials, and a “Get in Touch” section for inquiries. I handled

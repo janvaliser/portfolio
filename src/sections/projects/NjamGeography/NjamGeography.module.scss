@@ -1,32 +1,57 @@
-@use "@/styles/variables.scss" as *;
+@use "@/styles/breakpoints.scss" as *;
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: $spacing-xxxl;
+  gap: 64px;
   height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
-  padding: $spacing-xxxl;
+  padding: 64px;
   padding-right: 0;
+
+  @media (max-width: $breakpoint-xs) {
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+  }
 }
 
 .imageWrapper {
   position: relative;
   width: 60%;
   aspect-ratio: 1700 / 1400;
+
+  @media (max-width: $breakpoint-xs) {
+    width: 105%;
+  }
 }
 
 .description {
   display: flex;
   max-width: 400px;
   flex-direction: column;
-  gap: $spacing-xl;
+  gap: 24px;
+
+  @media (max-width: $breakpoint-xs) {
+    order: 1;
+    gap: 8px;
+  }
 }
 
 .title {
   display: flex;
   flex-direction: column;
-  gap: $spacing-m;
+  gap: 12px;
+
+  @media (max-width: $breakpoint-xs) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.details {
+  line-height: 1.3;
 }

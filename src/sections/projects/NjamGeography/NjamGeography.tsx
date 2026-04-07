@@ -12,7 +12,11 @@ const NjamGeography = () => {
           <Typography variant="heading-1">NJAM Geography</Typography>
           <ProjectTag variant="web-app" color="--njam-geography" />
         </div>
-        <Typography variant="body-1" align="justify">
+        <Typography
+          className={classes.details}
+          variant="body-1"
+          align="justify"
+        >
           Njam Geography is a responsive web app designed to help children learn
           geography in a gamified way. I contributed to the design and frontend
           implementation as part of a team project, creating game modes such as

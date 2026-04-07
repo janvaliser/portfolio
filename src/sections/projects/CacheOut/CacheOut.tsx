@@ -12,7 +12,11 @@ const CacheOut = () => {
           <Typography variant="heading-1">CacheOut</Typography>
           <ProjectTag variant="responsive-web-app" color="--cacheout" />
         </div>
-        <Typography variant="body-1" align="justify">
+        <Typography
+          className={classes.details}
+          variant="body-1"
+          align="justify"
+        >
           CacheOut is a responsive web-based casino where I served as the
           designer and frontend lead. I worked in a team to implement games such
           as Rocket, Plinko, Mines, and Chicken, and integrated Stripe for user
