@@ -1,16 +1,14 @@
-import classNames from "classnames";
 import TimelineDot, { TimelineDotIcon } from "../TimelineDot/TimelineDot";
 import TimelineLine from "../TimelineLine/TimelineLine";
 import classes from "./TimelineEntry.module.scss";
 
 type TimelineEntryProps = {
-  last: boolean;
   icon: TimelineDotIcon;
 };
 
-const TimelineEntry = ({ last, icon }: TimelineEntryProps) => {
+const TimelineEntry = ({ icon }: TimelineEntryProps) => {
   return (
-    <div className={classNames(classes.container, { [classes.last]: last })}>
+    <div className={classes.container}>
       <TimelineDot icon={icon} />
       <TimelineLine />
     </div>

@@ -1,8 +1,14 @@
+@use "@/styles/breakpoints.scss" as *;
+
 .heading-1 {
   font-size: 64px;
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: 0%;
+
+  @media (max-width: $breakpoint-xs) {
+    font-size: 40px;
+  }
 }
 
 .heading-2 {
@@ -29,4 +35,7 @@
 .body-2 {
   font-size: 14px;
   font-weight: 400;
+  @media (max-width: $breakpoint-xs) {
+    line-height: 1.2;
+  }
 }
