@@ -7,7 +7,9 @@
   height: 100vh;
 
   @media (max-width: $breakpoint-md) {
-    padding: 24px;
+    padding: 48px 24px;
+    height: fit-content;
+    min-height: 80vh;
   }
 }
 
@@ -22,6 +24,7 @@
 
   @media (max-width: $breakpoint-sm) {
     display: flex;
+    height: fit-content;
     flex-direction: column;
   }
 }

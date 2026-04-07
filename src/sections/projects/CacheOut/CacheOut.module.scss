@@ -13,6 +13,7 @@
 
   @media (max-width: $breakpoint-xs) {
     flex-direction: column;
+    height: 80vh;
     padding: 24px;
     gap: 16px;
   }
