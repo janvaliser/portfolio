@@ -5,7 +5,9 @@ const Hero = () => {
   return (
     <section className={classes.container}>
       <div className={classes.text}>
-        <Typography variant="heading-1">Hey, I&apos;m</Typography>
+        <Typography className={classes.heyText} variant="heading-1">
+          Hey, I&apos;m
+        </Typography>
         <Typography variant="heading-1" color="--primary">
           Jan Vališer
         </Typography>
