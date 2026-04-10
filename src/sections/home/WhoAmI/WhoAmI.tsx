@@ -1,7 +1,10 @@
+"use client";
+
 import Typography from "@/components/Typography/Typography";
 import classes from "./WhoAmI.module.scss";
 import classNames from "classnames";
 import Image from "next/image";
+import { motion, Variants } from "motion/react";
 
 const techStack = [
   { name: "Flutter", src: "/technologies/flutter.svg" },
@@ -15,33 +18,64 @@ const techStack = [
 ];
 
 const WhoAmI = () => {
+  const containerVariants: Variants = {
+    hidden: {},
+    visible: {
+      transition: {
+        delayChildren: 0.2,
+        staggerChildren: 0.25,
+      },
+    },
+  };
+
   return (
     <section className={classes.container}>
-      <div className={classes.grid}>
-        <div className={classNames(classes.about, classes.item)}>
+      <motion.div
+        className={classes.grid}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          once: true,
+          amount: 0.6,
+        }}
+      >
+        <div className={classNames(classes.center, classes.item)}>
+          <Typography align="center" variant="title">
+            Mobile & <br />
+            Web Developer
+          </Typography>
+        </div>
+
+        <motion.div
+          className={classNames(classes.about, classes.item)}
+          variants={{
+            hidden: { opacity: 0, x: -25 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           <Typography variant="title">Who am I?</Typography>
           <Typography variant="body-1">
             Frontend & mobile developer based in Slovenia, currently a computer
             science student focused on building modern, visually polished apps
             with smooth, thoughtful animations.
           </Typography>
-        </div>
-        <div className={classNames(classes.stack, classes.item)}>
-          <Typography variant="title">Tech Stack</Typography>
-          <ul role="list" className={classes.stackIcons}>
-            {techStack.map((entry) => (
-              <li key={entry.name}>
-                <Image
-                  src={entry.src}
-                  alt={entry.name}
-                  width={32}
-                  height={32}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={classNames(classes.education, classes.item)}>
+        </motion.div>
+
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: -25 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className={classNames(classes.image, classes.item)}
+        ></motion.div>
+        <motion.div
+          className={classNames(classes.education, classes.item)}
+          variants={{
+            hidden: { opacity: 0, x: 25 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           <Typography variant="title">Education</Typography>
           <ul role="list">
             <li>
@@ -61,15 +95,30 @@ const WhoAmI = () => {
               </Typography>
             </li>
           </ul>
-        </div>
-        <div className={classNames(classes.image, classes.item)}></div>
-        <div className={classNames(classes.center, classes.item)}>
-          <Typography align="center" variant="title">
-            Mobile & <br />
-            Web Developer
-          </Typography>
-        </div>
-      </div>
+        </motion.div>
+
+        <motion.div
+          className={classNames(classes.stack, classes.item)}
+          variants={{
+            hidden: { opacity: 0, y: 25 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          <Typography variant="title">Tech Stack</Typography>
+          <ul role="list" className={classes.stackIcons}>
+            {techStack.map((entry) => (
+              <li key={entry.name}>
+                <Image
+                  src={entry.src}
+                  alt={entry.name}
+                  width={32}
+                  height={32}
+                />
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
