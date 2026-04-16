@@ -13,18 +13,40 @@
   @media (max-width: $breakpoint-xs) {
     flex-direction: column;
     padding: 24px;
-    gap: 16px;
+    gap: 24px;
   }
 }
 
 .imageWrapper {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 45%;
-  aspect-ratio: 3000 / 2500;
+  aspect-ratio: 620 / 490;
 
   @media (max-width: $breakpoint-xs) {
     width: 100%;
   }
+}
+
+.image1 {
+  width: 35%;
+}
+
+.image2 {
+  width: 40%;
+  margin-left: -8%;
+  margin-right: -5%;
+}
+
+.image3 {
+  width: 36.5%;
+  margin-bottom: -1.5%;
+}
+
+:global(img) {
+  width: 100%;
+  height: auto;
 }
 
 .description {

@@ -5,7 +5,7 @@ import "@/styles/variables.scss";
 import Header from "@/components/Header/Header";
 
 const inter = Inter({
-  subsets: ["latin"],
+  subsets: ["latin-ext"],
   display: "swap",
 });
 
