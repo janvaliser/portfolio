@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints.scss" as *;
+
 :root {
   --background: #ffffff;
   --surface: #f5f5f5;
@@ -16,4 +18,9 @@
   --njam-geography: #0040a6;
 
   --header-z-index: 100;
+  --portfolio-image-border-radius: 10px;
+
+  @media (max-width: $breakpoint-xs) {
+    --portfolio-image-border-radius: 6px;
+  }
 }
