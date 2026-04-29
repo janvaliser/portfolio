@@ -119,7 +119,7 @@ const Grades = () => {
         whileInView="show"
         viewport={{ once: true }}
       >
-        <motion.div className={classes.title} /* variants={descriptionItem} */>
+        <div className={classes.title}>
           <motion.div variants={descriptionItem}>
             <Typography variant="heading-1">Grades</Typography>
           </motion.div>
@@ -127,7 +127,7 @@ const Grades = () => {
           <motion.div variants={descriptionItem}>
             <ProjectTag variant="mobile-app" color="--grades" />
           </motion.div>
-        </motion.div>
+        </div>
 
         <motion.div variants={descriptionItem}>
           <Typography

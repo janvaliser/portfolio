@@ -34,20 +34,14 @@
 
 .desktopImage {
   width: 82%;
-  transform: rotateZ(-10deg);
   border-radius: var(--portfolio-image-border-radius);
   overflow: hidden;
-
-  @media (max-width: $breakpoint-xs) {
-    transform: rotateZ(-5deg);
-  }
 }
 
 .mobileImage {
   width: 18%;
   margin-left: -5%;
   margin-bottom: -10%;
-  transform: rotateZ(5deg);
   border-radius: var(--portfolio-image-border-radius);
   overflow: hidden;
 
