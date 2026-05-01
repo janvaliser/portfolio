@@ -20,12 +20,35 @@
 }
 
 .imageWrapper {
-  position: relative;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   width: 65%;
   aspect-ratio: 1800 / 1250;
 
   @media (max-width: $breakpoint-xs) {
     width: 105%;
+    justify-content: center;
+  }
+}
+
+.desktopImage {
+  width: 82%;
+  border-radius: var(--portfolio-image-border-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.mobileImage {
+  width: 18%;
+  margin-left: -5%;
+  margin-bottom: -10%;
+  border-radius: var(--portfolio-image-border-radius);
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: $breakpoint-xs) {
+    margin-bottom: -15%;
   }
 }
 

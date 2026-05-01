@@ -109,7 +109,7 @@ const CacheOut = () => {
         variants={descriptionContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div className={classes.title}>
           <motion.div variants={descriptionItem}>
@@ -140,14 +140,13 @@ const CacheOut = () => {
         variants={imagesContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <motion.div className={classes.desktopImage} variants={desktopItem}>
           <Image
             src={desktopImage}
             alt="Cacheout project desktop screenshot"
             draggable={false}
-            priority
             sizes={`(max-width: ${BREAKPOINTS.xs}px) 80vw, (max-width: ${BREAKPOINTS.xl}px) 52vw, 806px`}
           />
         </motion.div>
@@ -157,7 +156,6 @@ const CacheOut = () => {
             src={mobileImage}
             alt="Cacheout project mobile screenshot"
             draggable={false}
-            priority
             sizes={`(max-width: ${BREAKPOINTS.xs}px) 20vw, 192px`}
           />
         </motion.div>
