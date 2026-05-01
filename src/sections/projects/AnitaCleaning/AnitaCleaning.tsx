@@ -117,7 +117,6 @@ const AnitaCleaning = () => {
             alt="AnitaCleaning project desktop screenshot"
             draggable={false}
             sizes={`(max-width: ${BREAKPOINTS.xs}px) 80vw, (max-width: ${BREAKPOINTS.xl}px) 52vw, 806px`}
-            priority
           />
         </motion.div>
 

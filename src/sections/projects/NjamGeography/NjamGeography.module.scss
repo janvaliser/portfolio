@@ -14,17 +14,46 @@
   @media (max-width: $breakpoint-xs) {
     flex-direction: column;
     padding: 24px;
-    gap: 16px;
+    gap: 32px;
   }
 }
 
 .imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 60%;
-  aspect-ratio: 1700 / 1400;
+  aspect-ratio: 1800 / 1250;
 
   @media (max-width: $breakpoint-xs) {
     width: 105%;
+    justify-content: center;
+  }
+}
+
+.menuImage {
+  width: 85%;
+  margin-top: -10%;
+  margin-left: -5%;
+  border-radius: var(--portfolio-image-border-radius);
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-xs) {
+    width: 88%;
+  }
+}
+
+.gameImage {
+  position: absolute;
+  width: 85%;
+  margin-bottom: -10%;
+  margin-right: -5%;
+  border-radius: var(--portfolio-image-border-radius);
+  overflow: hidden;
+
+  @media (max-width: $breakpoint-xs) {
+    width: 88%;
   }
 }
 
