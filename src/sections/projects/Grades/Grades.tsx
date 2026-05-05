@@ -137,9 +137,9 @@ const Grades = () => {
           >
             Grades is a cross-platform Flutter app used by staff of the
             Programming Methodologies Laboratory to manage subjects, exercises,
-            and student grades. I redesigned and rebuilt their internal system
-            from scratch, implementing features such as lab attendance tracking,
-            exam scoring, and an activity feed showing all users actions.
+            and student grades. I redesigned and rebuilt their internal system,
+            implementing features such as lab attendance tracking, exam scoring,
+            and an activity feed showing all users actions.
           </Typography>
         </motion.div>
       </motion.div>

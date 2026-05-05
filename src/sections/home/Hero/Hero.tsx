@@ -3,8 +3,30 @@
 import Typography from "@/components/Typography/Typography";
 import classes from "./Hero.module.scss";
 import { motion, Variants } from "motion/react";
+import { Fit, Layout, useRive } from "@rive-app/react-canvas";
+import { useEffect } from "react";
 
 const Hero = () => {
+  const { rive, RiveComponent } = useRive({
+    src: "/rive/avatar.riv",
+    stateMachines: "State Machine",
+    autoplay: false,
+
+    layout: new Layout({
+      fit: Fit.Cover, // Change to: rive.Fit.Contain, or Cover
+    }),
+  });
+
+  useEffect(() => {
+    if (!rive) return;
+
+    const timer = setTimeout(() => {
+      rive.play();
+    }, 1250);
+
+    return () => clearTimeout(timer);
+  }, [rive]);
+
   const containerVariants: Variants = {
     hidden: {},
     visible: {
@@ -26,7 +48,7 @@ const Hero = () => {
     },
   };
 
-  const imageVariants: Variants = {
+  const riveVariants: Variants = {
     hidden: {
       opacity: 0,
       scale: 0.9,
@@ -69,7 +91,9 @@ const Hero = () => {
         </motion.span>
       </div>
 
-      <motion.div className={classes.image} variants={imageVariants} />
+      <motion.div className={classes.rive} variants={riveVariants}>
+        <RiveComponent />
+      </motion.div>
     </motion.section>
   );
 };

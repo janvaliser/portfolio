@@ -8,13 +8,14 @@
   height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 64px;
-  padding-right: 0;
+  padding: 32px;
 
   @media (max-width: $breakpoint-xs) {
     flex-direction: column;
+    height: 80vh;
     padding: 24px;
     gap: 32px;
+    margin-bottom: 20%;
   }
 }
 

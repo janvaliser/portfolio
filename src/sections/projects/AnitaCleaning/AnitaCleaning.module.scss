@@ -8,8 +8,7 @@
   height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 64px;
-  padding-left: 0;
+  padding: 32px;
 
   @media (max-width: $breakpoint-xs) {
     flex-direction: column;

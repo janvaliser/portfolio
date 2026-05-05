@@ -7,13 +7,17 @@
   height: 100vh;
   max-width: 1440px;
   margin: 0 auto;
-  gap: 96px;
+  gap: 64px;
 
   @media (max-width: $breakpoint-md) {
-    height: 80vh;
+    height: 100vh;
     flex-direction: column;
     padding: 24px;
-    gap: 32px;
+    gap: 0px;
+  }
+
+  @media (max-width: $breakpoint-xs) {
+    height: 90vh;
   }
 }
 
@@ -35,14 +39,15 @@
   }
 }
 
-.image {
+.rive {
   width: 100%;
-  aspect-ratio: 5 / 4;
-  max-width: 520px;
+  //aspect-ratio: 5/4;
+  aspect-ratio: 584 / 484;
+  //max-width: 520px;
+  max-width: 584px;
   border-radius: 16px;
-  background-color: var(--surface);
 
-  @media (max-width: $breakpoint-md) {
+  /* @media (max-width: $breakpoint-md) {
     max-width: 600px;
-  }
+  } */
 }
