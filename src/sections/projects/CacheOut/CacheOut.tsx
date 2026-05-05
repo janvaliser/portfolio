@@ -147,7 +147,7 @@ const CacheOut = () => {
             src={desktopImage}
             alt="Cacheout project desktop screenshot"
             draggable={false}
-            sizes={`(max-width: ${BREAKPOINTS.xs}px) 80vw, (max-width: ${BREAKPOINTS.xl}px) 52vw, 806px`}
+            sizes={`(max-width: ${BREAKPOINTS.xs}px) 80vw, (max-width: ${BREAKPOINTS.xl}px) 60vw, 806px`}
           />
         </motion.div>
 
