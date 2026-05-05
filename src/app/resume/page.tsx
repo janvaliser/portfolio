@@ -14,7 +14,7 @@ const CV = () => {
       icon: "box" as const,
       title: "Mobile developer",
       location: "FERI - Programming Methodologies Laboratory",
-      date: "JUN 2024 - FEB 2026",
+      date: "JUL 2024 - FEB 2026",
     },
     {
       icon: "box" as const,
