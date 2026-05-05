@@ -22,7 +22,7 @@ const Hero = () => {
 
     const timer = setTimeout(() => {
       rive.play();
-    }, 1250);
+    }, 1100);
 
     return () => clearTimeout(timer);
   }, [rive]);

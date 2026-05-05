@@ -4,7 +4,9 @@ import Typography from "@/components/Typography/Typography";
 import classes from "./WhoAmI.module.scss";
 import classNames from "classnames";
 import Image from "next/image";
+import headshot from "../../../../public/headshot.png";
 import { motion, Variants } from "motion/react";
+import { BREAKPOINTS } from "@/styles/breakpoints";
 
 const techStack = [
   { name: "Flutter", src: "/technologies/flutter.svg" },
@@ -67,8 +69,17 @@ const WhoAmI = () => {
             hidden: { opacity: 0, y: -25 },
             visible: { opacity: 1, y: 0 },
           }}
-          className={classNames(classes.image, classes.item)}
-        ></motion.div>
+          className={classNames(classes.headshotWrapper, classes.item)}
+        >
+          <Image
+            src={headshot}
+            alt="Headshot of me"
+            draggable={false}
+            className={classes.headshot}
+            fill
+            sizes={`(max-width: ${BREAKPOINTS.sm}px) 100vw, 33vw`}
+          />
+        </motion.div>
         <motion.div
           className={classNames(classes.education, classes.item)}
           variants={{
