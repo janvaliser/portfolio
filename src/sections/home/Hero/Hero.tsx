@@ -13,7 +13,7 @@ const Hero = () => {
     autoplay: false,
 
     layout: new Layout({
-      fit: Fit.Cover, // Change to: rive.Fit.Contain, or Cover
+      fit: Fit.Cover,
     }),
   });
 
